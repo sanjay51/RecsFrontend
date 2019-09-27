@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Card } from 'app/templates/card/card.component';
 
 declare var anime: any;
 
@@ -13,6 +14,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
   }
+
+  mainCards = [
+    new Card("Powerful", "Uptick platform uses deep machine learning technologies to accurately power personalization use-cases."),
+    new Card("It Just Works!", "Uptick API works with any arbitrary data, automatically deriving semantic meaning in order to deliver a targeted and personalized experience for every customer."),
+    new Card("Elastic & Real-Time", "A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements."),
+    new Card("Automatic", "Blah to accurately power personalization use-cases.")
+  ]
 
   ngAfterViewInit() {
     (function () {
